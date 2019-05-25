@@ -7,4 +7,4 @@ class Trainer:
   def list_jorgemons(self):
     print("{}'s jorgemons".format(self.name))
     for c in self.jorgemons:
-      print(c.name)
+      print(c.na
