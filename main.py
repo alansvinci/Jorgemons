@@ -10,3 +10,13 @@ jorge = Trainer("Jorge", 6, [
   jorgemons.Joriolu()
 ])
 jorge.list_jorgemons()
+
+def tackle(a, b):
+  b.curr_hp -= round(40 * (a.attack / 255))
+
+jorchu = jorge.jorgemons[0]
+jormander = jorge.jorgemons[1]
+jorchu.do_move(jormander, tackle)
+
+jorchu.status()
+jormander.status()
