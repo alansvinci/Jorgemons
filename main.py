@@ -1,14 +1,19 @@
 from trainer import Trainer
 import jorgemons
+import moves
 
 jorge = Trainer("Jorge", 6, [
   jorgemons.Jorchu(),
   jorgemons.Jormander(),
-  jorgemons.Jorquirtle(),
-  jorgemons.Jorgesaur(),
   jorgemons.Joroakie(),
-  jorgemons.Joriolu()
 ])
+
+george = Trainer("George", 6, [
+  jorgemons.Joriolu(),
+  jorgemons.Jorquirtle(),
+  jorgemons.Jorgesaur()
+])
+
 jorge.list_jorgemons()
 
 def jorackle(a, b):

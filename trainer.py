@@ -8,3 +8,11 @@ class Trainer:
     print("{}'s jorgemons".format(self.name))
     for c in self.jorgemons:
       print(c.name)
+
+  def defeated(self):
+    result = True
+
+    for jorgemon in self.jorgemons:
+      result = result and jorgemon.fainted()
+
+      return result
